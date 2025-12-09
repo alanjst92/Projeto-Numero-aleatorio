@@ -1,13 +1,9 @@
-alert('Boas vindas ao nosso site!');
-let nome = prompt("Digite seu nome");
-let idade = prompt("Informe sua idade");
-let numeroDeVendas = 50;
-let saldoDisponivel = 1000;
-alert('Erro! Preencha todos os campos.');
-let mensagemDeErro = "Erro! Preencha todos os campos";
+let titulo = document.querySelector('h1');
+titulo.innerHTML = 'Jogo do número secreto';
 
-if(idade >= 18 ){
-    alert('Pode tirar habilitação!');
-}else{
-    alert('Não pode tira habilitação!');
+let paragrafo = document.querySelector('p');
+paragrafo = 'Escolha um número entre 1 e 10';
+
+function verificarChute (){
+    console.log('O botão foi cliado');
 }
